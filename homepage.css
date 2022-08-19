@@ -1,0 +1,57 @@
+
+body {
+    font-family: "Tw Cen MT", sans-serif;
+
+    background: url("resources/img/background.png") no-repeat center fixed;
+    background-size: cover;
+}
+
+
+
+/*phone = smaller then 500px*/
+#desktop{
+    display: none;
+}
+
+#tablet{
+    display: none;
+}
+
+#phone{
+    width: 100%
+}
+
+
+/*tablet = between 500 and 1194px*/
+@media only screen and (min-width: 500px){
+    #desktop{
+        display: none;
+    }
+
+    #tablet{
+        display: unset;
+        width: 100%;
+    }
+
+    #phone{
+        display: none;
+    }
+}
+
+
+
+/*desktop = bigger then 1194px*/
+@media only screen and (min-width: 1194px){
+    #desktop{
+        display: unset;
+        width: 100%;
+    }
+
+    #tablet{
+        display: none;
+    }
+
+    #phone{
+        display: none;
+    }
+}
